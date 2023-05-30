@@ -12,111 +12,48 @@
 <meta name="author" content="Açelya Bayık"/>
 
 
+<link rel="stylesheet" href="mystyle.css">
+<link rel="icon" type="image/x-icon" href="fotolar/favicon.ico.jpg">     <!--favicon ekleme-->
 
-<style>                     /* css */
-    .anabaşlık{
-        color:rgb(44, 124, 161);
-        background-color: powderblue; 
- 
-        border-width: 5px;  
-        border-color: cornflowerblue;         /* çerçeve ayarları */
-        border-style:groove;
-       
-        opacity:0.7;                              /* opaklık değeri*/   
-        /*   display: inline-block;  */
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>       <!--JS için kütüphane-->
+
+<style>
+
+    
+     #hoşgeldiniz {
+        display: flex;
+       justify-content: center;  /*yatayda ortalar*/
+       margin-top: 190px;
+       margin-left: 60px;
+        color:black;
+        text-shadow:0px 0px 5px rgb(190, 87, 87) ;
+        opacity: 0.7;
+        font-size: 90px;
+        height: 100vh;
+        font-family:'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 3px;
+        width: 1000px;
+        height: 300px;
     }
-
-
-
-
-
-    h2{
-        color:rgb(44, 124, 161);
-        text-align: center;
+    
+    .content span {
+        width: 40px;
+        display: inline-block;
     }
-   
- 
- 
-    form{
-        color:rgb(72, 15, 89);
-        border-width: 3px;  
-        border-color: rgb(72, 15, 89);        /*ÜYELİK*/
-        border-style:solid; 
-        margin-right: 900px;
-        
-    }
-
-
-    p{
-        font-size: 20px;
-        color: rgb(0, 0, 0)  !important ;    /* !important yazınca p nin bu özelliğini sabitledik, aşağıda değiştirilse değişmez */
-    }
-
-
-   /* header nav a{                  header altındaki navın altındaki a lar 
-        text-decoration: none;            linklerin altındaki çizgileri yokeder  (none yerine underline olsaydı çizgi olurdu)
-        background-color: rgb(246, 199, 206); 
-  
-        border-width:3px;
-        border-color: cornflowerblue;   
-        border-style: groove;       çerçeve şekli 
-        font-size: 20px;
-        border-radius: 8px;          yuvarlatılmış kenarlar 
-    }           
-    */
-
-    body{
-        margin-left: 200px;
-        margin-right:200px;               /* sağ ve sol boşluklar */
-       
-        background-image: url(fotolar/arkaplan2.png);
-        background-size: cover;           /* resmi tam sığdırır */
-        background-attachment: fixed;     /* resmi sabitler, tekrarı önler */
-    }
-
-
-    ul li a{
-        text-decoration: none; 
-    }
-
-/*======================================================================================================*/
-/* gezinme çubuğu (css) */
-
-#yatay {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:rosybrown;
-}
-
-.gezinme {
-  float: left;
-}
-
-.gezinme a {
-  display: block;
-  color: rgba(0, 0, 0, 0.692);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;     /*linklerin altındaki çizgileri yok eder*/
-}
-
-.gezinme a:hover {
-  background-color:powderblue;
-}
-
-/*====================================================================================================*/
-
-
-</style>
-
-
+    
+    </style>
 
 </head>
 
 
-<body>        <!-- style="background-color:linen">-->
+
+
+
+
+
+<body>        
 
     <h1 class="anabaşlık" style="text-align:center;">Açelya Bayık</h1>          <!--yazıyı ortalamak için-->
 
@@ -125,144 +62,92 @@
     
 
     <ul id="yatay">
-        <li class="gezinme"><a href="#anasayfa">Ana sayfa</a></li>
-        <li class="gezinme"><a href="#özetbilgi">Özet Bilgi</a></li>
-        <li class="gezinme"><a href="#eğitim">Eğitim</a></li>
-        <li class="gezinme"><a href="#galeri">Galeri</a></li>
-        <li class="gezinme"><a href="#iletişim">İletişim</a></li>
-        <li class="gezinme"><a href="#üyelik"> Üyelik</a></li>
+        <li class="gezinme"><a href=itp.html>Ana sayfa</a></li>
+        <li class="gezinme"><a href="özetBilgi.html">Özet Bilgi</a></li>
+        <li class="gezinme"><a href="galeri.html">Galeri</a></li>
+        <li class="gezinme"><a href="eğitim.html">Eğitim</a></li>
+        <li class="gezinme"><a href="sertifikalar.html">Sertifikalar</a></li>
+        <li class="gezinme"><a href="iletişim.html">İletişim</a></li>
+        <li class="gezinme"><a href="üyelik.html"> Üyelik</a></li>
         
       </ul>
    
-  <!--  <header>
-        <nav>
-            <a href="#">ana sayfa</a>
-            <a href="#">eğitim</a>
-            <a href="#">foto galeri</a> 
-            <a href="#">videolar</a>
-            <a href="#">iletişim</a>
-
-        </nav>
-    </header>    -->
     
-   <hr>
+   
    <br>
 
 
-        <img src="https://media.licdn.com/dms/image/D4E03AQE5GUDHFrrYaQ/profile-displayphoto-shrink_800_800/0/1665440619830?e=2147483647&v=beta&t=GQEhCRPtbuYS-gDDMDZ_PyOwrQhCWDtr_QiwvRiHeNc"
-    width="200"
-    alt="benim resmim"/>
-               <!--kopyalanan resim adresi yapıştırıldı-->
-               <!--width ile resmin boyutu ayarlandı-->
-               <!--alt ile resim açılmazsa diye açıklama-->
 
 
 
 
-<h2 id="özetbilgi">ÖZET BİLGİ</h2>
-<p>  Merhaba, ben Açelya Bayık. Sizlere kısaca kendimden bahsedeyim.
-    2001 senesinde Karabük’te doğdum ve 11 yaşıma kadar orada yaşadım. Karadeniz’de doğup büyümemin bana kazandırdığı en güzel şeyin doğaya olan sevgi ve saygım olduğunu düşünüyorum. Bu sebepten olacaktır ki doğa fotoğrafları çekmek ve doğanın saf güzelliğini seyretmek ve bunun üzerine düşünmek en büyük hobilerimdendir. 11 yaşımdan sonra ailemle birlikte Sivas’a – her bir köşesinde tarihten izler barındıran şehre- taşındım. Ortaokulumu bitirdikten sonra Sivas’ın en iyi Anadolu Lisesini kazandım. Lise öğrenimim boyunca tubitak projesi, doğa gezileri gibi çeşitli aktivitelere katılmaya özen gösterdim. Öğrenim hayatım boyunca uyumlu, sessiz, düzenli çalışan, başarılı ve her daim öğretmenleri tarafından taktir edilen bir öğrenci olduğumu söyleyebilirim. Arkadaşlarımla ilişkilerimde genellikle sadık, uyumlu ve ağırbaşlı olmuşumdur. Üniversite eğitimime başlamadan önce kariyerim için yabancı dil bilmemin bana bir çok avantaj sağlayacağı bilincinde olduğum için isteğe bağlı hazırlık okudum.  Şuan da Bilgisayar Mühendisliği bölümünde okumaktayım. 
-</p>
-
-
-
-<hr>
-
-
-<h2 id="eğitim">EĞİTİM</h2>
-
-<ul>
-    <li>Karabük Demir Çelik İlkokulu </li>
-    <li>Sivas Selçuk Ortaokulu</li>
-    <li>Sivas Selçuk Anadolu Lisesi(Almanca)</li>
-    <li>Bandırma On Yedi Eylül Üniversitesi</li>
-        <ul>
-        <li><a href="https://www.bandirma.edu.tr"  target="_blank"  title="üniversitem"> Bandırma On Yedi Eylül Üniversitesi linki</a></li>
-        </ul>
-   </ul>
-
-   <!-- target="_blank" ,linki başka sekmede açmak için (olmasa da olur)-->   
-   <!--title lı kısım linkin üzerine fareyi getirdiğinde yazar bilgi olarak.(şart değil)-->
- 
-   <p style="font-size:15px">Şuanda bilgisayar mühendisliği 2.sınıf öğrencisiyim.</p>          <!--paragrafın yazı boyutu için-->
-
-
-<hr>
-               
-
- <h2 id="iletişim">İLETİŞİM</h2>
-
-   <p>Beni takip etmek isterseniz aşağıdaki linkleri kullanabilirsiniz.</p>
-
-    <ul>
-     <li> <a href="https://www.linkedin.com/in/a%C3%A7elya-bay%C4%B1k-2b7290253/"  target="_blank"  title="Linkedln"> Linkedln </a> </li>
-     <li> <a href="https://www.instagram.com/acelyabayik/"  target="_blank"  title="İnstagram"> İnstagram </a> </li>
-     <li> <a href="#"> acelya7801@gmail.com</a> </li>
-     <li> <a href="https://github.com/acelyaBayik"  target="_blank"  title="Github"> Github</a></li>
-     
-    </ul>  
-
-
-<hr>
-
-    
-<h2 id="üyelik">ÜYELİK</h2>
-
-<p><em>Her yeni gün, yeni bir bilgi...</em></p>
-<p>Sen de teknoloji alanındaki gelişmeleri mail almak istersen aşağıdaki formu doldurarak ücretsiz bir şekilde kayıt olabilirsin!</p> <br>
-
-<form>
-
-    <label for="name">Ad:</label>   <br>
-    <input type="text"  id="name"  name="name"/>   <br>
-    
-
-    <label for="name">Soyad:</label> <br>                        <!--kutu ismi-->  
-    <input type="text"  id="name"  name="name"/>           <br>    <!--yazı yazma kutuları--> 
-
-    
-    <label for="email">Email:</label>     <br>
-    <input type="email"  id="email"  name="email"/>     <br>
-
- 
-    <!--  <label for="password">Şifre:</label>  <br>
-    <input type="password"  id="password"  name="password"/>     <br>  -->
-
-
-    <label for="date">Doğum Günü:</label>   <br>
-    <input type="date"  id="date"  name="date"/>      <br><br>
-
-
- 
-    <!-- <input type="submit" value="giriş"/>    -->  
-   
-    <button type="submit">kayıt ol</button>          <!--bu 2 şekilde de buton yapılabiliyor-->  
-    <input type="reset" value="sıfırla"/>          <!--resetleme butonu-->
-</form>   
-
-
-
-<script>
-
-</script>
-
-<br>
-
-<hr>
-
+ <!--     <button onclick="window.print()">Sayfayı yazdır</button>    -->
       
 
+ <div id="hoşgeldiniz">
+    <div class="content">
+        <div class="random">
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+        </div>
+      </div>
+   
+      
 
+      <script>
+
+        $( document ).ready(function() {
+        
+        let $randomnbr = $('.nbr');
+        let $timer = 30;
+        let $data = 0;
+        let index;
+        let change;
+        let letters = ["H", "O", "Ş", "G", "E", "L", "D", "İ","N","İ","Z"];
+        
+        $randomnbr.each(function() {
+            change = Math.round( Math.random() * 100 );
+            $( this ).attr('data-change', change);
+        })
+        
+        function random() {
+            return Math.round( Math.random() * 9 );
+        }
+        
+        function select() {
+            return Math.round( Math.random() * $randomnbr.length + 1 );
+        }
+        
+        function value() {
+            $('.nbr:nth-child(' + select() + ')').html('' + random() + '');
+            $('.nbr:nth-child(' + select() + ')').attr('data-number', $data);
+            $data++;
+        
+            $randomnbr.each(function() {
+                if(parseInt($( this ).attr('data-number')) > parseInt($( this ).attr('data-change'))) {
+                    index = $('.ltr').index( this );
+                    $( this ).html(letters[index]);
+                    $( this ).removeClass('nbr');
+                }
+            })
+        }
+        
+        $it = setInterval(value, $timer);
+        
+        })
+        
+        </script>
+
+</div>
 </body>
 </html>
 
-
-
-<!--     <br/>                  satır atlar
-         <strong> <strong/>     arasına yazılanlar kalın olur.
-         <em>     </em>         arasına yazılanlar italik olur.
-         <small>  </small>      arasına yazılanlar küçük olur
-         <mark>   </mark>       arasına yazılanın üstünü sarı fosforluyla çizer.
-         <pre>    </pre>        paragraf etiketi gibi, ama paragraf etiketine yazılanlar sıralı gözükürken,bu etikette olduğu gibi gözükür(mesela satır atlanıyorsa atlar,paragraf gibi yanından devam etmez)
-          img etiketleri paragraf etiketi içine yazılmalı                     
--->

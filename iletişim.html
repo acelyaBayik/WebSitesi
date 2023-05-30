@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+   
+
+<head>
+
+    <title>Açelya Bayık</title>          
+
+<meta charset="UTF-8"/>            <!--türkçe karakter için-->
+<meta name="keywords" content="açelya,bayık,bilgisayar,mühendislik,banü "/>
+<meta name ="description" content="Ben kimim? "/>
+<meta name="author" content="Açelya Bayık"/>
+
+
+<link rel="stylesheet" href="mystyle.css">
+<link rel="icon" type="image/x-icon" href="fotolar/favicon.ico.jpg">     <!--favicon ekleme-->
+
+
+<style>
+
+li a{
+        color: black;     /*link rengi*/
+    }
+    li a:visited{           /*linkler ziyaret edilse bile siyah kalır*/
+        color:black;
+    }
+
+
+
+    ul#ltşm li{
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    ul#ltşm li a:hover{      /*üstüne gelince rengi değişir*/
+        color:rgb(44, 124, 161);
+    }
+
+
+
+ iframe{                     /*harita ayarları*/
+    width: 450px ;
+    height: 320px;
+    margin-left: 25px;
+   
+}
+
+
+div#yanyana{              /*iki kutunun yan yana gelmesi için.Burası olmasa alt alta geliyor*/
+    display: flex;
+    justify-content: space-between;   
+    flex-direction: row;
+    
+}
+
+
+div.ikutu{                       /*(iletişim kutuları için) .kutu divinden farkı genişliği küçük aldık ve burda margin-right kullanmadık*/
+    border-width: 2px;  
+    border-color: cornflowerblue;
+    border-style:groove;
+    border-radius: 10px;         /*yuvarlatılmış kenar*/
+    padding: 20px;
+    width: 500px; 
+    box-shadow: 0px 0px 10px black; 
+    margin-top: 30px; 
+}
+
+
+
+</style>
+
+
+
+</head>
+
+
+<body>        <!-- style="background-color:linen">-->
+
+    <h1 class="anabaşlık" style="text-align:center;">Açelya Bayık</h1>          <!--yazıyı ortalamak için-->
+
+    
+
+    
+
+    <ul id="yatay">
+        <li class="gezinme"><a href=itp.html>Ana sayfa</a></li>
+        <li class="gezinme"><a href="özetBilgi.html">Özet Bilgi</a></li>
+        <li class="gezinme"><a href="galeri.html">Galeri</a></li>
+        <li class="gezinme"><a href="eğitim.html">Eğitim</a></li>
+        <li class="gezinme"><a href="sertifikalar.html">Sertifikalar</a></li>
+        <li class="gezinme"><a href="iletişim.html">İletişim</a></li>
+        <li class="gezinme"><a href="üyelik.html"> Üyelik</a></li>
+        
+      </ul>
+   
+    
+   
+   <br>
+
+<div id="yanyana">
+
+   <div class="ikutu">
+    <h2 id="iletişim">İLETİŞİM</h2>
+   
+      <p>Beni takip etmek isterseniz aşağıdaki linkleri kullanabilirsiniz.</p>
+   
+       <ul id="ltşm">
+        <li> <a href="https://www.linkedin.com/in/a%C3%A7elya-bay%C4%B1k-2b7290253/"  target="_blank"  title="Linkedln"> Linkedln </a> </li>
+        <li> <a href="https://www.instagram.com/acelyabayik/"  target="_blank"  title="İnstagram"> İnstagram </a> </li>
+        <li> <a href="#"> acelya7801@gmail.com</a> </li>
+        <li> <a href="https://github.com/acelyaBayik"  target="_blank"  title="Github"> Github</a></li>
+        
+       </ul>  
+    </div> 
+
+
+
+
+<div class="ikutu">
+ 
+   <h2>OFİS ADRESİM</h2>
+   <iframe src="https://www.google.com/maps/d/embed?mid=18czp3fNg64XBOvRHTDsnLAzdmi2P1KY&ehbc=2E312F" width="640" height="480"></iframe>
+</div>
+
+
+
+</div>
+   </body>
+
+
+   </html>
