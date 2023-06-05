@@ -1,0 +1,134 @@
+.anabaşlık{
+    color:rgb(44, 124, 161);
+    background-color: powderblue; 
+
+    border-width: 5px;  
+    border-color: cornflowerblue;         /* çerçeve ayarları */
+    border-style:groove;
+    box-shadow: 0px 0px 5px black;
+    opacity:0.7;                              /* opaklık değeri*/   
+    /*   display: inline-block;  */
+}
+
+
+#hoşgeldinizYazısı{
+    font-size: 90px;
+    text-align:center;
+    padding-top: 95px;      /*alt*/
+    opacity:0.55;   
+}
+
+
+h2{
+    color:rgb(44, 124, 161);
+    text-align: center;
+}
+
+
+
+form{
+    
+    color:rgb(72, 15, 89);
+    border-width: 2px;  
+    border-color: rgb(72, 15, 89);                /*ÜYELİK*/
+    border-style:solid; 
+    margin-right: 900px;
+    border-radius: 10px;         /*yuvarlatılmış kenar*/
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+p{
+    font-size: 20px;
+    color: rgb(0, 0, 0)  !important ;    /* !important yazınca p nin bu özelliğini sabitledik, aşağıda değiştirilse değişmez */
+}
+
+
+/* header nav a{                  header altındaki navın altındaki a lar 
+    text-decoration: none;            linklerin altındaki çizgileri yokeder  (none yerine underline olsaydı çizgi olurdu)
+    background-color: rgb(246, 199, 206); 
+
+    border-width:3px;
+    border-color: cornflowerblue;   
+    border-style: groove;       çerçeve şekli 
+    font-size: 20px;
+    border-radius: 8px;          yuvarlatılmış kenarlar 
+}           
+*/
+
+body{
+    margin-left: 200px;
+    margin-right:200px;               /* sağ ve sol boşluklar */
+   
+    background-image: url(fotolar/arkaplan2.png);
+    background-size: cover;           /* resmi tam sığdırır */
+    background-attachment: fixed;     /* resmi sabitler, tekrarı önler */
+}
+
+
+ul li a{
+    text-decoration: none; 
+}
+
+/*======================================================================================================*/
+/* gezinme çubuğu (css) */
+
+#yatay {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color:rosybrown;
+}
+
+.gezinme {
+float: left;
+}
+
+.gezinme a {
+display: block;
+color: rgba(0, 0, 0, 0.692);
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;     /*linklerin altındaki çizgileri yok eder*/
+}
+
+.gezinme a:hover {
+background-color:powderblue;
+}
+
+/*====================================================================================================*/
+
+
+
+#sertifika{
+    display: flex;
+    justify-content:space-evenly , flex-start;
+    align-items: center;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+
+
+
+
+
+.kutu{
+    border-width: 2px;  
+    border-color: cornflowerblue;
+    border-style:groove;
+    margin-right: 900px;
+    border-radius: 10px;         /*yuvarlatılmış kenar*/
+    padding: 20px;
+    width: 1095px;  
+    box-shadow: 0px 0px 10px black; 
+    margin-top: 30px;    
+}
+
+div.kutu p {
+    padding: 10px;         /*özetbilgideki p ler için */
+}
+

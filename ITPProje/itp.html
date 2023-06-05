@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+   
+
+<head>
+
+    <title>Açelya Bayık</title>          
+
+<meta charset="UTF-8"/>            <!--türkçe karakter için-->
+<meta name="keywords" content="açelya,bayık,bilgisayar,mühendislik,banü "/>
+<meta name ="description" content="Ben kimim? "/>
+<meta name="author" content="Açelya Bayık"/>
+
+
+<link rel="stylesheet" href="mystyle.css">
+<link rel="icon" type="image/x-icon" href="fotolar/favicon.ico.jpg">     <!--favicon ekleme-->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>       <!--JS için kütüphane-->
+
+<style>
+
+    
+     #hoşgeldiniz {
+        display: flex;
+       justify-content: center;  /*yatayda ortalar*/
+       margin-top: 190px;
+       margin-left: 60px;
+        color:black;
+        text-shadow:0px 0px 5px rgb(190, 87, 87) ;
+        opacity: 0.7;
+        font-size: 90px;
+        height: 100vh;
+        font-family:'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 3px;
+        width: 1000px;
+        height: 300px;
+    }
+    
+    .content span {
+        width: 40px;
+        display: inline-block;
+    }
+    
+    </style>
+
+</head>
+
+
+
+
+
+
+
+<body>        
+
+    <h1 class="anabaşlık" style="text-align:center;">Açelya Bayık</h1>          <!--yazıyı ortalamak için-->
+
+    
+
+    
+
+    <ul id="yatay">
+        <li class="gezinme"><a href=itp.html>Ana sayfa</a></li>
+        <li class="gezinme"><a href="özetBilgi.html">Özet Bilgi</a></li>
+        <li class="gezinme"><a href="galeri.html">Galeri</a></li>
+        <li class="gezinme"><a href="eğitim.html">Eğitim</a></li>
+        <li class="gezinme"><a href="sertifikalar.html">Sertifikalar</a></li>
+        <li class="gezinme"><a href="iletişim.html">İletişim</a></li>
+        <li class="gezinme"><a href="üyelik.html"> Üyelik</a></li>
+        
+      </ul>
+   
+    
+   
+   <br>
+
+
+
+
+
+
+ <!--     <button onclick="window.print()">Sayfayı yazdır</button>    -->
+      
+
+ <div id="hoşgeldiniz">
+    <div class="content">
+        <div class="random">
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+          <span class="nbr ltr">0</span>
+        </div>
+      </div>
+   
+      
+
+      <script>
+
+        $( document ).ready(function() {
+        
+        let $randomnbr = $('.nbr');
+        let $timer = 30;
+        let $data = 0;
+        let index;
+        let change;
+        let letters = ["H", "O", "Ş", "G", "E", "L", "D", "İ","N","İ","Z"];
+        
+        $randomnbr.each(function() {
+            change = Math.round( Math.random() * 100 );
+            $( this ).attr('data-change', change);
+        })
+        
+        function random() {
+            return Math.round( Math.random() * 9 );
+        }
+        
+        function select() {
+            return Math.round( Math.random() * $randomnbr.length + 1 );
+        }
+        
+        function value() {
+            $('.nbr:nth-child(' + select() + ')').html('' + random() + '');
+            $('.nbr:nth-child(' + select() + ')').attr('data-number', $data);
+            $data++;
+        
+            $randomnbr.each(function() {
+                if(parseInt($( this ).attr('data-number')) > parseInt($( this ).attr('data-change'))) {
+                    index = $('.ltr').index( this );
+                    $( this ).html(letters[index]);
+                    $( this ).removeClass('nbr');
+                }
+            })
+        }
+        
+        $it = setInterval(value, $timer);
+        
+        })
+        
+        </script>
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+   
+
+<head>
+
+    <title>Açelya Bayık</title>          
+
+<meta charset="UTF-8"/>            <!--türkçe karakter için-->
+<meta name="keywords" content="açelya,bayık,bilgisayar,mühendislik,banü "/>
+<meta name ="description" content="Ben kimim? "/>
+<meta name="author" content="Açelya Bayık"/>
+
+
+<link rel="stylesheet" href="mystyle.css">
+<link rel="icon" type="image/x-icon" href="fotolar/favicon.ico.jpg">     <!--favicon ekleme-->
+
+
+
+<style>
+  div.kutu form button[type=submit], button[type=reset]{         /*kayıt ol ve sıfırla butonları için*/
+  width: 90%;
+  background-color:rosybrown;
+  color:rgb(72, 15, 89);
+  padding:20px, 14px ;
+  margin: 8px,0;
+  border:none;
+  border-radius:5px;
+  cursor: pointer;
+  
+  }
+
+
+
+div.kutu form input[type=text], input[type=email], input[type=date]{      /*ad,soyad,mail bilgilerin girildiği kutular için*/
+    border-radius: 5px;
+    border-color:rgb(72, 15, 89);
+}
+
+</style>
+
+
+
+
+</head>
+
+
+<body>       
+
+    <h1 class="anabaşlık" style="text-align:center;">Açelya Bayık</h1>          <!--yazıyı ortalamak için-->
+
+    
+
+    
+
+    <ul id="yatay">
+        <li class="gezinme"><a href=itp.html>Ana sayfa</a></li>
+        <li class="gezinme"><a href="özetBilgi.html">Özet Bilgi</a></li>
+        <li class="gezinme"><a href="galeri.html">Galeri</a></li>
+        <li class="gezinme"><a href="eğitim.html">Eğitim</a></li>
+        <li class="gezinme"><a href="sertifikalar.html">Sertifikalar</a></li>
+        <li class="gezinme"><a href="iletişim.html">İletişim</a></li>
+        <li class="gezinme"><a href="üyelik.html"> Üyelik</a></li>
+        
+      </ul>
+   
+    
+   
+   <br>
+
+   <body>
+   <div class="kutu">   
+    <h2 id="üyelik">ÜYELİK</h2>
+    
+    <p><em>Her yeni gün, yeni bir bilgi...</em></p>
+    <p>Sen de teknoloji alanındaki gelişmeleri mail almak istersen aşağıdaki formu doldurarak ücretsiz bir şekilde kayıt olabilirsin!</p> <br>
+    
+                 
+    <form>
+
+        <label for="name">Ad:</label>   <br>
+        <input type="text"  id="name"  name="name"/>   <br>
+        
+    
+        <label for="name">Soyad:</label> <br>                        <!--kutu ismi-->  
+        <input type="text"  id="name"  name="name"/>           <br>    <!--yazı yazma kutuları--> 
+    
+        
+        <label for="email">Email:</label>     <br>
+        <input type="email"  id="email"  name="email"/>     <br>
+    
+     
+        <!--  <label for="password">Şifre:</label>  <br>
+        <input type="password"  id="password"  name="password"/>     <br>  -->
+    
+    
+        <label for="date">Doğum Günü:</label>   <br>
+        <input type="date"  id="date"  name="date"/>      <br><br>
+    
+    
+     
+        <!-- <input type="submit" value="giriş"/>    -->  
+       
+    
+       <!-- <button onclick="this.innerHTML= 'kayıt olundu'" type="submit">kayıt ol</button>  --> <!--değişen buton-->
+        <button type="submit">kayıt ol</button> 
+        <button type="reset">sıfırla</button>       <!--bu 2 şekilde de buton yapılabiliyor-->  
+        <!--<input type="reset" value="sıfırla"/>  -->    <!--resetleme butonu-->
+    
+    </form>  
+   </div>
+     
+
+    
+        
+    </body>  
+    </html>
