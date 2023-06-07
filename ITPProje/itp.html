@@ -13,34 +13,37 @@
 
 
 <link rel="stylesheet" href="mystyle.css">
-<link rel="icon" type="image/x-icon" href="fotolar/favicon.ico.jpg">     <!--favicon ekleme-->
+<link rel="icon" type="image/x-icon" href="fotolar/favicon.ico.jpg">      <!--favicon ekleme-->
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>       <!--JS için kütüphane-->
+<script src="hoşgeldiniz.js"></script>                                    <!--js dosyasını dahil etme-->
+
+
 
 <style>
 
     
-     #hoşgeldiniz {
+     #hoşgeldiniz {                 /*açılıştaki hoşgeldiniz yazısı stil ve konum özellikleri*/
         display: flex;
-       justify-content: center;  /*yatayda ortalar*/
-       margin-top: 190px;
-       margin-left: 60px;
-        color:black;
-        text-shadow:0px 0px 5px rgb(190, 87, 87) ;
-        opacity: 0.7;
-        font-size: 90px;
+        justify-content: center;   /*yatayda ortalar*/
+        margin-top: 190px;         /*üstteki boşluk*/
+        margin-left: 60px;         /*solundaki boşluk*/
+        color:black; 
+        text-shadow:0px 0px 5px rgb(72, 15, 89); ;
+        opacity: 0.7;              /*opaklık*/
+        font-size: 85px;
         height: 100vh;
         font-family:'Times New Roman', Times, serif;
         text-transform: uppercase;
         font-weight: bold;
-        letter-spacing: 3px;
-        width: 1000px;
-        height: 300px;
+        letter-spacing: 2px;       /*harf aralığı*/
+        width: 1000px;            
+        height: 300px;            
     }
     
-    .content span {
-        width: 40px;
-        display: inline-block;
+    .content span {        /*hoşgeldiniz yazısındaki her bir harf için*/
+        width: 40px;       /*?*/
+        display:contents;   /*her bir harfin blok konumu için*/
     }
     
     </style>
@@ -55,7 +58,7 @@
 
 <body>        
 
-    <h1 class="anabaşlık" style="text-align:center;">Açelya Bayık</h1>          <!--yazıyı ortalamak için-->
+    <h1 class="anabaşlık" style="text-align:center;">Açelya Bayık</h1>          <!--center yazıyı ortalar-->
 
     
 
@@ -84,7 +87,7 @@
  <!--     <button onclick="window.print()">Sayfayı yazdır</button>    -->
       
 
- <div id="hoşgeldiniz">
+ <div id="hoşgeldiniz">           <!--hoşgeldiniz yazısı html kodu-->
     <div class="content">
         <div class="random">
           <span class="nbr ltr">0</span>
@@ -99,55 +102,9 @@
           <span class="nbr ltr">0</span>
           <span class="nbr ltr">0</span>
         </div>
-      </div>
-   
       
+   
 
-      <script>
-
-        $( document ).ready(function() {
-        
-        let $randomnbr = $('.nbr');
-        let $timer = 30;
-        let $data = 0;
-        let index;
-        let change;
-        let letters = ["H", "O", "Ş", "G", "E", "L", "D", "İ","N","İ","Z"];
-        
-        $randomnbr.each(function() {
-            change = Math.round( Math.random() * 100 );
-            $( this ).attr('data-change', change);
-        })
-        
-        function random() {
-            return Math.round( Math.random() * 9 );
-        }
-        
-        function select() {
-            return Math.round( Math.random() * $randomnbr.length + 1 );
-        }
-        
-        function value() {
-            $('.nbr:nth-child(' + select() + ')').html('' + random() + '');
-            $('.nbr:nth-child(' + select() + ')').attr('data-number', $data);
-            $data++;
-        
-            $randomnbr.each(function() {
-                if(parseInt($( this ).attr('data-number')) > parseInt($( this ).attr('data-change'))) {
-                    index = $('.ltr').index( this );
-                    $( this ).html(letters[index]);
-                    $( this ).removeClass('nbr');
-                }
-            })
-        }
-        
-        $it = setInterval(value, $timer);
-        
-        })
-        
-        </script>
-
-</div>
 </body>
 </html>
 

@@ -32,7 +32,7 @@
 
 
 
-div.kutu form input[type=text], input[type=email], input[type=date]{      /*ad,soyad,mail bilgilerin girildiği kutular için*/
+div.kutu form input[type=text], input[type=email], input[type=date]{      /*ad,soyad,mail ve doğum günü bilgilerin girildiği kutular için*/
     border-radius: 5px;
     border-color:rgb(72, 15, 89);
 }
@@ -83,15 +83,11 @@ div.kutu form input[type=text], input[type=email], input[type=date]{      /*ad,s
         
     
         <label for="name">Soyad:</label> <br>                        <!--kutu ismi-->  
-        <input type="text"  id="name"  name="name"/>           <br>    <!--yazı yazma kutuları--> 
+        <input type="text"  id="name"  name="name"/>    <br>    <!--yazı yazma kutuları--> 
     
         
         <label for="email">Email:</label>     <br>
         <input type="email"  id="email"  name="email"/>     <br>
-    
-     
-        <!--  <label for="password">Şifre:</label>  <br>
-        <input type="password"  id="password"  name="password"/>     <br>  -->
     
     
         <label for="date">Doğum Günü:</label>   <br>
@@ -99,12 +95,11 @@ div.kutu form input[type=text], input[type=email], input[type=date]{      /*ad,s
     
     
      
-        <!-- <input type="submit" value="giriş"/>    -->  
-       
-    
-       <!-- <button onclick="this.innerHTML= 'kayıt olundu'" type="submit">kayıt ol</button>  --> <!--değişen buton-->
         <button type="submit">kayıt ol</button> 
-        <button type="reset">sıfırla</button>       <!--bu 2 şekilde de buton yapılabiliyor-->  
+        <button type="reset">sıfırla</button>         
+       
+        <!--bu 2 şekilde de buton yapılabiliyor-->
+        <!-- <input type="submit" value="giriş"/>    --> 
         <!--<input type="reset" value="sıfırla"/>  -->    <!--resetleme butonu-->
     
     </form>  

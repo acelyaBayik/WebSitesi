@@ -32,7 +32,7 @@ li a{
         margin: 10px;
     }
 
-    ul#ltşm li a:hover{      /*üstüne gelince rengi değişir*/
+    ul#ltşm li a:hover{      /*linkin üstüne gelince rengi değişir*/
         color:rgb(44, 124, 161);
     }
 
@@ -46,7 +46,7 @@ li a{
 }
 
 
-div#yanyana{              /*iki kutunun yan yana gelmesi için.Burası olmasa alt alta geliyor*/
+div#yanyana{              /*iki kutunun yan yana gelmesi için. Burası olmasa alt alta geliyor*/
     display: flex;
     justify-content: space-between;   
     flex-direction: row;
@@ -54,7 +54,7 @@ div#yanyana{              /*iki kutunun yan yana gelmesi için.Burası olmasa al
 }
 
 
-div.ikutu{                       /*(iletişim kutuları için) .kutu divinden farkı genişliği küçük aldık ve burda margin-right kullanmadık*/
+div.ikutu{                       /*(iletişim kutuları için) .kutu divinden farklı olarak genişliğini küçülttük ve burada margin-right kullanmadık, margin right kullanınca kutuların araları çok açılıyor*/
     border-width: 2px;  
     border-color: cornflowerblue;
     border-style:groove;
@@ -74,9 +74,9 @@ div.ikutu{                       /*(iletişim kutuları için) .kutu divinden fa
 </head>
 
 
-<body>        <!-- style="background-color:linen">-->
+<body>        
 
-    <h1 class="anabaşlık" style="text-align:center;">Açelya Bayık</h1>          <!--yazıyı ortalamak için-->
+    <h1 class="anabaşlık" style="text-align:center;">Açelya Bayık</h1>          <!--center yazıyı ortalamar-->
 
     
 
@@ -97,7 +97,7 @@ div.ikutu{                       /*(iletişim kutuları için) .kutu divinden fa
    
    <br>
 
-<div id="yanyana">
+<div id="yanyana">           <!--2 tane ikutu div ini kapsar-->
 
    <div class="ikutu">
     <h2 id="iletişim">İLETİŞİM</h2>

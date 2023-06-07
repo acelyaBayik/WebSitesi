@@ -3,38 +3,32 @@
     background-color: powderblue; 
 
     border-width: 5px;  
-    border-color: cornflowerblue;         /* çerçeve ayarları */
+    border-color: cornflowerblue;         /* çerçeve rengi */
     border-style:groove;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px black;        /*gölgelendirme*/
     opacity:0.7;                              /* opaklık değeri*/   
     /*   display: inline-block;  */
 }
 
 
-#hoşgeldinizYazısı{
-    font-size: 90px;
-    text-align:center;
-    padding-top: 95px;      /*alt*/
-    opacity:0.55;   
-}
 
 
-h2{
+h2{                                   /*anasayfa, özet bilgi, galeri... şeklinde her sayfada olan ana başlıklar için*/
     color:rgb(44, 124, 161);
     text-align: center;
 }
 
 
 
-form{
+form{          /*üyelik kısmı için scc kodları*/
     
-    color:rgb(72, 15, 89);
+    color:rgb(72, 15, 89);   
     border-width: 2px;  
-    border-color: rgb(72, 15, 89);                /*ÜYELİK*/
+    border-color: rgb(72, 15, 89);               
     border-style:solid; 
     margin-right: 900px;
     border-radius: 10px;         /*yuvarlatılmış kenar*/
-    padding-left: 10px;
+    padding-left: 10px;           /*çerçeve ve içerik arası sol boşluk*/
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 0px 0px 10px black;
@@ -47,17 +41,6 @@ p{
 }
 
 
-/* header nav a{                  header altındaki navın altındaki a lar 
-    text-decoration: none;            linklerin altındaki çizgileri yokeder  (none yerine underline olsaydı çizgi olurdu)
-    background-color: rgb(246, 199, 206); 
-
-    border-width:3px;
-    border-color: cornflowerblue;   
-    border-style: groove;       çerçeve şekli 
-    font-size: 20px;
-    border-radius: 8px;          yuvarlatılmış kenarlar 
-}           
-*/
 
 body{
     margin-left: 200px;
@@ -70,7 +53,7 @@ body{
 
 
 ul li a{
-    text-decoration: none; 
+    text-decoration: none;   /*linklerin altındaki çizgileri yok eder*/
 }
 
 /*======================================================================================================*/
@@ -104,19 +87,10 @@ background-color:powderblue;
 
 
 
-#sertifika{
-    display: flex;
-    justify-content:space-evenly , flex-start;
-    align-items: center;
-    flex-direction:row;
-    flex-wrap: nowrap;
-}
 
 
 
-
-
-.kutu{
+.kutu{                     /*her sayfadaki ierikleri içinde bulunduran mor çerçeve için*/
     border-width: 2px;  
     border-color: cornflowerblue;
     border-style:groove;
@@ -128,7 +102,7 @@ background-color:powderblue;
     margin-top: 30px;    
 }
 
-div.kutu p {
-    padding: 10px;         /*özetbilgideki p ler için */
+div.kutu p {               /*özetbilgideki p ler için */
+    padding: 10px;         /*mor çerçeve ve yazı arası boşluk bırakır */
 }
 
